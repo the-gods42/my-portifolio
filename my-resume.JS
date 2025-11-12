@@ -9,13 +9,3 @@ function updateRangeValue(slider) {
     }
     valueDisplay.textContent = slider.value + "%";
 }
-
-window.addEventListener('DOMContentLoaded', function() {
-    var sliders = document.querySelectorAll('input[type="range"]');
-    sliders.forEach(function(slider) {
-        slider.addEventListener('input', function() {
-            updateRangeValue(slider);
-        });
-        updateRangeValue(slider);
-    });
-});
